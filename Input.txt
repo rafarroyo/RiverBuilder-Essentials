@@ -1,0 +1,145 @@
+# Please provide input for the following parameters.
+
+###############
+#### NOTES ####
+###############
+
+# - All dimensional numbers are in units of meters.
+# - User-defined functions may be used for sub-reach variability parameters only.
+
+####################
+#### GUIDELINES ####
+####################
+
+# To ensure the program functions correctly, please abide by the following:
+
+# - Do not leave any parameters blank.
+
+# - Do not produce spaces between:
+# (1) the parameter/function name and '='
+# (2) '=' and the input.
+
+# - Do not change the ordering of the domain, dimensionless, channel, and floodplain sections and parameters.
+
+# - When providing an input involving PI, do so in the form of (a*)PI(/b), where a and b are constants, and the parenthesized fragments are optional. (EX: 2*PI, PI, PI/6, 3*PI/4)
+
+# - If the cross sectional shape is the asymmetric U, the first channel alignment function parameter MUST be a sine function.
+
+####################################
+#### DOMAIN PARAMETERS (METERS) ####
+####################################
+
+Datum=1
+
+Length=1
+
+##################################
+#### DIMENSIONLESS PARAMETERS ####
+##################################
+
+Valley Slope (S_v)=0
+
+Slope (S)=0
+
+Critical Shields Stress (t*_50)=0
+
+X-Y Increments=2
+
+Y-Z Increments=2
+
+#####################################
+#### CHANNEL PARAMETERS (METERS) ####
+#####################################
+
+Bankfull Width (W_bf)=0
+
+Bankfull Height (H_bf)=0
+
+Median Sediment Size (D_50)=0
+
+########################################
+#### FLOODPLAIN PARAMETERS (METERS) ####
+########################################
+
+Top Height=0
+
+Bottom Width Offset=0
+
+Top Width Offset=0
+
+Bottom Height=0
+
+Boundary Width=0
+
+###############################
+#### CROSS SECTIONAL SHAPE ####
+###############################
+
+# AU = asymmetric U
+# SU = symmetric U
+# TZ(n) = triangle, trapezoid, rectangle
+#	n is the number of edges along the
+#	trapezoidal base of the cross section
+#	such that 0 <= n <= Y-Z Increments
+#
+# Triangle: n = 0
+# Trapezoid: 1 <= n <= (Y-Z Increments-2)
+# Rectangle: (Y-Z Increments-3) <= n <= (Y-Z Increments) 
+
+Cross-Sectional Shape=AU
+
+################################
+#### USER-DEFINED FUNCTIONS ####
+################################
+
+# a = amplitude
+# f = frequency
+# ps = phase shift
+# w = wavelength
+#
+# Users may define their own functions to be any of the following: 
+# Sine function: SIN#=SIN(a, f, ps)
+# Cosine function: COS#=COS(a, f, ps)
+# Sine^2 function: SIN_SQ#=SIN_SQ(a, f, ps)
+# Linear function: LINE#=(slope, y-intercept)
+# Perlin function: PERL#=(a, w)
+
+SIN1=SIN(0, 1, 0)
+
+##########################################
+#### SUB-REACH VARIABILITY PARAMETERS ####
+##########################################
+
+# Meandering Centerline (M_c) Properties
+
+Meandering Centerline Function=SIN1
+
+
+
+# Channel Elevation (C_s) Properties
+
+Channel Elevation Function=SIN1
+
+
+
+# Bankfull Width (W_bf) Properties
+
+Bankfull Width Function=SIN1
+
+
+
+# Thalweg Elevation (Z_t) Properties
+
+Thalweg Elevation Function=SIN1
+
+
+
+# Left Floodplain Properties
+
+Left Floodplain Function=SIN1
+
+
+
+# Right Floodplain Properties
+
+Right Floodplain Function=SIN1
