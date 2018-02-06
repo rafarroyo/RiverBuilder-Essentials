@@ -1,7 +1,7 @@
 # RiverBuilder-Essentials
 Essential files for the RiverBuilder package on CRAN.
 
-See https://cran.r-project.org/web/packages/RiverBuilder/index.html for package details.
+See https://cran.r-project.org/web/packages/RiverBuilder/index.html for the official CRAN package details.
 
 **Input.txt**
 
