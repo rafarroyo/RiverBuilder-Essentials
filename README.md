@@ -1,7 +1,8 @@
 # RiverBuilder-Essentials
 Essential files for the RiverBuilder package on CRAN.
 
-See https://cran.r-project.org/web/packages/RiverBuilder/index.html for the official CRAN package details.
+See Gregory B. Pasternack's website for accessing all of the package's resources and underlying research:
+http://pasternack.ucdavis.edu/research/projects/synthetic-river-valleys/
 
 **Input.txt**
 
