@@ -4,6 +4,9 @@ Essential files for the RiverBuilder package on CRAN.
 See Gregory B. Pasternack's website for accessing all of the package's resources and underlying research:
 http://pasternack.ucdavis.edu/research/projects/synthetic-river-valleys/
 
+Official CRAN package URL:
+https://cran.r-project.org/web/packages/RiverBuilder/index.html
+
 **Input.txt**
 
 * Contains structured parameters whose values allow the generation of river-related outputs. Please abide by all instructions described at the top of this file and the user manual to ensure successful function calls.
